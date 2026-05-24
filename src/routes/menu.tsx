@@ -37,9 +37,9 @@ function MenuPage() {
     <section className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
       <div className="mb-6">
         <p className="text-xs uppercase tracking-[0.2em] text-terracotta">Menu</p>
-        <h1 className="mt-2 font-display text-4xl sm:text-5xl">All things cacau</h1>
+        <h1 className="mt-2 font-display text-4xl sm:text-5xl">All things cacao</h1>
         <p className="mt-2 max-w-xl text-muted-foreground">
-          Tap a category, filter to taste, add to your order. We confirm everything by WhatsApp.
+          Tap a category, filter to taste, and add to your order. We confirm everything by WhatsApp.
         </p>
       </div>
 

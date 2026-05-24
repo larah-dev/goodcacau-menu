@@ -8,9 +8,9 @@ export const Route = createFileRoute("/order")({
   head: () => ({
     meta: [
       { title: "Your order — GoodCacau" },
-      { name: "description", content: "Review your cacau order and send it via WhatsApp." },
+      { name: "description", content: "Review your cacao order and send it via WhatsApp." },
       { property: "og:title", content: "Your order — GoodCacau" },
-      { property: "og:description", content: "Review your cacau order and send it via WhatsApp." },
+      { property: "og:description", content: "Review your cacao order and send it via WhatsApp." },
     ],
   }),
   component: OrderPage,
@@ -46,7 +46,7 @@ function OrderPage() {
     return (
       <section className="mx-auto max-w-2xl px-4 py-20 text-center">
         <h1 className="font-display text-4xl">Your basket is empty</h1>
-        <p className="mt-3 text-muted-foreground">Sem pressa — go pick something cozy.</p>
+        <p className="mt-3 text-muted-foreground">No rush — go pick something cozy.</p>
         <Link to="/menu" className="mt-6 inline-flex h-12 items-center justify-center rounded-full bg-primary px-6 text-sm font-medium text-primary-foreground">
           Browse the menu
         </Link>
@@ -118,7 +118,7 @@ function OrderPage() {
             value={s.customerName}
             onChange={(e) => s.setCustomerName(e.target.value)}
             maxLength={60}
-            placeholder="Ex: Mariana"
+            placeholder="e.g. Mariana"
             className={`mt-1 w-full rounded-xl border bg-background px-3 py-2.5 text-sm outline-none focus:border-ring ${
               submitted && nameMissing ? "border-destructive" : "border-input"
             }`}
@@ -158,7 +158,7 @@ function OrderPage() {
             </>
           )}
 
-          <label className="mt-4 block text-sm font-medium">Notes for the order</label>
+          <label className="mt-4 block text-sm font-medium">Order notes</label>
           <textarea
             value={s.orderNotes}
             onChange={(e) => s.setOrderNotes(e.target.value)}
@@ -189,7 +189,7 @@ function OrderPage() {
             Send via WhatsApp
           </a>
           <p className="mt-2 text-center text-xs text-muted-foreground">
-            We'll confirm your order shortly — pagamento na retirada/entrega.
+            We'll confirm your order shortly — pay on pickup or delivery.
           </p>
 
           <button

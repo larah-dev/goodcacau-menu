@@ -101,24 +101,24 @@ export function buildWhatsAppMessage(state: {
   orderNotes: string;
 }) {
   const lines: string[] = [];
-  lines.push("Olá GoodCacau! Gostaria de fazer um pedido.");
+  lines.push("Hello GoodCacau! I'd like to place an order.");
   lines.push("");
-  lines.push(`Nome: ${state.customerName || "—"}`);
+  lines.push(`Name: ${state.customerName || "—"}`);
   lines.push("");
-  lines.push("Pedido:");
+  lines.push("Order:");
   for (const i of state.items) {
     const opts = Object.values(i.options).join(" · ");
     const line = `${i.qty}x ${i.name}${opts ? ` — ${opts}` : ""}`;
     lines.push(line);
-    if (i.notes) lines.push(`   Obs: ${i.notes}`);
+    if (i.notes) lines.push(`   Notes: ${i.notes}`);
   }
   lines.push("");
-  lines.push(`Total estimado: ${formatBRL(cartTotal(state.items))}`);
-  lines.push(`Modalidade: ${state.fulfillment === "pickup" ? "Retirada" : "Entrega"}`);
-  if (state.fulfillment === "delivery" && state.address) lines.push(`Endereço: ${state.address}`);
+  lines.push(`Estimated total: ${formatBRL(cartTotal(state.items))}`);
+  lines.push(`Method: ${state.fulfillment === "pickup" ? "Pickup" : "Delivery"}`);
+  if (state.fulfillment === "delivery" && state.address) lines.push(`Address: ${state.address}`);
   if (state.orderNotes) {
     lines.push("");
-    lines.push(`Observações: ${state.orderNotes}`);
+    lines.push(`Notes: ${state.orderNotes}`);
   }
   return lines.join("\n");
 }
