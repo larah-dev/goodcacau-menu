@@ -140,7 +140,7 @@ This architecture ensures a responsive, scalable, and visually appealing user in
 
 Contact and Engagement
 
-For inquiries, orders, or to connect with the GoodCacau brand:
+For inquiries, orders, or to connect with the GoodCacau brand: This brand does not exist! :)
 
 
 
