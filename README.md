@@ -1,7 +1,7 @@
 <div align="center">
 
 <img 
-  src="https://raw.githubusercontent.com/larah-dev/goodcacau-menu/main/Captura%20de%20tela%202026-05-23%20221812.png"
+  src="https://raw.githubusercontent.com/larah-dev/goodcacau-menu/main/goodcacau.img.png"
   alt="GoodCacau Preview"
   width="90%"
   style="border-radius: 24px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);" 
