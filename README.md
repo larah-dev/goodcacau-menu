@@ -3,9 +3,17 @@
 <img 
   src="https://raw.githubusercontent.com/larah-dev/goodcacau-menu/main/goodcacauimg"
   alt="GoodCacau Preview"
-  width="90%"
-  style="border-radius: 24px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);" 
+  width="95%"
+  style="
+    border-radius: 28px;
+    box-shadow:
+      0 10px 30px rgba(0,0,0,0.25),
+      0 0 80px rgba(255,180,120,0.15);
+  "
 />
+
+<br><br>
+
 
 </div>
 
