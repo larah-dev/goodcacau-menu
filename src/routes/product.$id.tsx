@@ -56,7 +56,6 @@ function ProductPage() {
   const onAdd = () => {
     add(product, options, unitPrice, qty);
     if (notes) {
-      // attach notes to the just-added line via a small follow-up
       const state = useCart.getState();
       const lastMatching = [...state.items].reverse().find((i) => i.productId === product.id);
       if (lastMatching) state.setItemNotes(lastMatching.id, notes);

@@ -31,12 +31,12 @@ function HomePage() {
               Open today · {BRAND.hours.split("·")[1]?.trim() ?? BRAND.hours}
             </span>
             <h1 className="mt-5 font-display text-5xl leading-[1.05] tracking-tight text-balance sm:text-6xl md:text-7xl">
-              Cacau de verdade,
+              Real cacao,
               <br />
-              <span className="italic text-terracotta">feito devagar.</span>
+              <span className="italic text-terracotta">made slow.</span>
             </h1>
             <p className="mt-5 max-w-md text-balance text-base text-muted-foreground sm:text-lg">
-              Drinks quentes, gelados e doces de cacau de origem — preparados todos os dias na nossa cozinha pequena.
+              Hot drinks, iced drinks and cacao sweets — made fresh every day in our tiny kitchen, with single-origin beans.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
               <Link
@@ -80,18 +80,18 @@ function HomePage() {
         <div className="grid items-center gap-10 md:grid-cols-2">
           <img
             src={storyImg}
-            alt="Cacau products on a wooden table"
+            alt="Cacao products on a wooden table"
             loading="lazy"
             width={1280}
             height={960}
             className="aspect-[4/3] w-full rounded-3xl object-cover shadow-soft"
           />
           <div>
-            <p className="text-xs uppercase tracking-[0.2em] text-terracotta">Nossa história</p>
+            <p className="text-xs uppercase tracking-[0.2em] text-terracotta">Our story</p>
             <h2 className="mt-3 font-display text-4xl leading-tight">A cozy ritual, in every cup.</h2>
             <p className="mt-4 text-muted-foreground">
               GoodCacau started as a small Sunday ritual — friends, ceramic mugs, and slowly stirred cacao.
-              Today, we still bake in small batches and stir each pot by hand. Nada de pressa.
+              Today, we still bake in small batches and stir each pot by hand. No rush, ever.
             </p>
             <Link to="/about" className="mt-6 inline-flex items-center gap-1 text-sm font-medium text-foreground underline-offset-4 hover:underline">
               Read more →
@@ -104,7 +104,7 @@ function HomePage() {
       <section className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
         <div className="mb-8 flex items-end justify-between">
           <div>
-            <p className="text-xs uppercase tracking-[0.2em] text-terracotta">Favoritos</p>
+            <p className="text-xs uppercase tracking-[0.2em] text-terracotta">Favorites</p>
             <h2 className="mt-2 font-display text-3xl sm:text-4xl">This week's picks</h2>
           </div>
           <Link to="/menu" className="hidden text-sm font-medium underline-offset-4 hover:underline sm:inline">

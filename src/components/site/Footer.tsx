@@ -25,7 +25,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-cream/10 py-5 text-center text-xs text-cream/60">
-        © {new Date().getFullYear()} GoodCacau · Feito com calma.
+        © {new Date().getFullYear()} GoodCacau · Made slowly.
       </div>
     </footer>
   );

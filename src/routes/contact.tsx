@@ -15,7 +15,7 @@ export const Route = createFileRoute("/contact")({
 });
 
 function ContactPage() {
-  const wa = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Olá GoodCacau!")}`;
+  const wa = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hello GoodCacau!")}`;
   return (
     <section className="mx-auto max-w-3xl px-4 py-14 sm:px-6">
       <p className="text-xs uppercase tracking-[0.2em] text-terracotta">Contact</p>
