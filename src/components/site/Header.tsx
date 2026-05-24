@@ -9,11 +9,11 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   const links = [
-    { to: "/", label: "Home" },
-    { to: "/menu", label: "Menu" },
-    { to: "/about", label: "About" },
-    { to: "/faq", label: "FAQ" },
-    { to: "/contact", label: "Contact" },
+    { to: "/", label: "Início" },
+    { to: "/menu", label: "Cardápio" },
+    { to: "/about", label: "Sobre" },
+    { to: "/faq", label: "Dúvidas" },
+    { to: "/contact", label: "Contato" },
   ] as const;
 
   return (
@@ -42,10 +42,10 @@ export function Header() {
           <Link
             to="/order"
             className="relative inline-flex h-10 items-center gap-2 rounded-full bg-primary px-4 text-sm text-primary-foreground shadow-soft transition-transform hover:scale-[1.02]"
-            aria-label="View order"
+            aria-label="Ver pedido"
           >
             <ShoppingBasket className="h-4 w-4" />
-            <span className="hidden sm:inline">Order</span>
+            <span className="hidden sm:inline">Pedido</span>
             {count > 0 && (
               <span className="ml-1 inline-flex h-5 min-w-5 items-center justify-center rounded-full bg-accent px-1.5 text-xs font-semibold text-accent-foreground">
                 {count}
@@ -55,7 +55,7 @@ export function Header() {
           <button
             className="grid h-10 w-10 place-items-center rounded-full border border-border md:hidden"
             onClick={() => setOpen((v) => !v)}
-            aria-label="Open menu"
+            aria-label="Abrir menu"
           >
             <Menu className="h-5 w-5" />
           </button>
