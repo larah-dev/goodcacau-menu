@@ -103,3 +103,7 @@
   .font-display { font-family: var(--font-display); }
   .text-balance { text-wrap: balance; }
 }
+
+#lovable-badge {
+  display: none !important;
+}
